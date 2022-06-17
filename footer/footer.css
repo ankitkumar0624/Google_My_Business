@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nuosu SIL', serif;
+}
+
+body{
+    /* background-color: #bbbbbb; */
+    height: 100%;
+}
+.container{
+    min-height: 100%;
+}
+.main{
+    overflow: auto;
+    /* padding-bottom:100px; */
+}
+.footer{
+    position: relative;
+    height: 100px;
+    margin-top: 100px;
+    clear: both;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 15%;
+    margin: 0 20px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-decoration: capitalize;
+    /* color: #ffffff; */
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s;
+
+}
+
+.footer-col ul li a:hover{
+    columns: #ffffff;
+    padding-left:8px ;
+}
+.container{
+    max-width: 100%;
+    margin: 30px auto;
+    background-color: gray;
+}
+
+.row{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li{
+    list-style: none;
+}
+
+.footer-col .social-links a{
+    display: flex;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    transition:all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+color:#24262b ;
+/* background-color: #ffffff; */
+}
+
+
+@media(max-width:767px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:574px) {
+    .footer-col{
+        width: 100%;
+    }
+}
