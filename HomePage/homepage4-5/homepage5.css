@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+}
+.cont-img{
+    text-align: center;
+    /* margin-top: 150px ; */
+    top:1rem; bottom:0; left:0;right:0;
+    position: absolute;
+}
+
+img{
+    border-radius: 50%;
+}
+.cont-tittle{
+    margin-top: 100px;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.cont-para{
+    text-align: center;
+    /* margin-bottom: 30px; */
+    font-size: 18px;
+    color: gray;
+}
+.column {
+    /* background-color: #aaa;
+    border: 2px solid black; */
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  margin: auto;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column-tittle{
+    font-size: 24px;
+    font-weight: 500;
+}
+.column-para{
+    font-size: 18px;
+    /* border: 2px solid red; */
+    width: 250px;
+    height: 100px;
+    color: gray;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+}
+.container-circle{
+    margin-top: 150px ;
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid black; */
+    position:relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border-circle{
+    text-align: center;
+    width:200px;
+    height:200px;
+    /* border:1px solid black; */
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    margin:auto;
+    border-radius:50%; 
+    border: 5px dotted gray;
+  }
+  
+  .border-circle2{
+    width:200px;
+    height:200px;
+    /* border:1px solid black; */
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    margin:auto;
+    border-radius:50%; 
+    /* border: 2px solid black; */
+  }
+
+  .circle2{ /*used to make small dot*/
+    width:10px;
+    height:10px;
+    background:orange;
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle2 60s linear infinite;
+  }
+
+
+  .circle{ /*used to make small dot*/
+    width:10px;
+    height:10px;
+    background:green;
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle 60s linear infinite;
+  }
+  
+
+  
+  
+  
+  @keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-100px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-100px)
+                rotate(-360deg);
+    }
+  }
+
+  
+  @keyframes circle2{
+    0%{
+      transform:rotate(180deg)
+                translate(-100px)
+                rotate(180deg);
+    
+    }
+    100%{
+      transform:rotate(540deg)
+                translate(-100px)
+                rotate(-540deg);
+    }
+  }
+  

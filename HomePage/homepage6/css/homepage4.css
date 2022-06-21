@@ -1,0 +1,55 @@
+@import url(./partials/_variables.css);
+@import url(./partials/_global.css);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.site-main .about-area .about-title h1 {
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.site-main .about-area .about-title p {
+    padding: 1rem 7rem;
+}
+
+.site-main .about-area .client {
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 2rem 0rem;
+}
+
+.site-main .about-area .client .client-img {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+img {
+    border-radius: 4px;
+}
+
+.site-main .about-area .client .about-client {
+    padding-top: 1rem;
+    border-radius: 8px;
+}
+
+.site-main .about-area .client .about-client h4 {
+    font: normal 500 21px/ 20px var(--roboto);
+}
+
+.site-main .about-area .client .about-client p {
+    font-size: 14px;
+}
+
+.site-main .about-area .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span {
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}

@@ -1,0 +1,15 @@
+@media only screen and (max-width: 792px) {
+    .site-main .about-area .about-title h2>span {
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+    .site-main .about-area .about-title p {
+        padding: 0%;
+    }
+}
+
+@media only screen and (max-width: 1910px) {
+    .site-main .about-area {
+        padding: 3% 4%;
+    }
+}
