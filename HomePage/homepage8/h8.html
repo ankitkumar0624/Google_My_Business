@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="h8.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Navbar</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a  class="nav-img" href="image">Image</a>
+        <a  class="nav-title" href="Business Profile">Business Profile</a>
+        <a  href="#Overview">Overview</a>
+        <div class="dropdown">
+          <button class="dropbtn">Business solution 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div> 
+        <a href="#Resources">Resources</a>
+        <a href="#about">FAQs</a>
+       <div class="right"> <a href="#home" class="active" id="id1" style="float: right;">Manage Now</a></div>
+        <div class="right"><a href="Sign-in"   id="id2" style="float: right;">Sign in</a></div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      
+      <div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+        <h2>Responsive Topnav with Dropdown</h2>
+      </div>
+      
+      <script src="h8.js"> </script>
+</body>
+</html>
